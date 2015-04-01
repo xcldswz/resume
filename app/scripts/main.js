@@ -2,7 +2,7 @@
 
 require.config({
     paths: {
-        jquery: 'vendor/jquery.min',
+        jquery: 'vendor/zepto.min',
 
         react: 'vendor/react-with-addons.min',
         "JSXTransformer": 'vendor/JSXTransformer',
@@ -20,7 +20,10 @@ require.config({
     shim: {
         underscore: {
             exports: '_'
-        }
+        },
+	    jquery: {
+		    exports: '$'
+	    }
     }
 });
 

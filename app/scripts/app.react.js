@@ -2,7 +2,7 @@
 
 define([
     'backbone', 'react', 'jsx!router.react', 'react.backbone'
-], function (Backbone, React, Router, ReactBackbone) {
+], function (Backbone, React, Router) {
 
     var initialize = function () {
         new Router();
