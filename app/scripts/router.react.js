@@ -1,27 +1,26 @@
 'use strict';
 
 define([
-    'underscore',
-    'backbone',
+    'react-router',
     'react',
 	'jsx!component/IndexComponent.react'
-],function(_, Backbone, React, IndexComponent){
-    var AppRouter = Backbone.Router.extend({
-        index: function(){
-            React.render( <IndexComponent />, document.getElementById('main_content'));
-        },
-        initialize: function() {
-            var self = this,
-                routes = [
-                    [ /^.*$/, 'index' ]
-                ];
+],function(Router, React, IndexComponent){
+	var Route = Router.Route, AppRouter;
 
-            _.each(routes, function(route) {
-                self.route.apply(self, route);
-            });
-            Backbone.history.start();
-        }
-    });
+	var DefaultRoute = Router.DefaultRoute;
 
-    return AppRouter;
+	var routes = (
+		<Route handler={IndexComponent} path="/">
+			<DefaultRoute handler={IndexComponent} />
+		</Route>
+	);
+
+	AppRouter = function(){};
+	AppRouter.prototype.init = function () {
+		Router.run(routes, Router.HistoryLocation, function (Handler) {
+			React.render(<Handler/>, document.getElementById('main_content'));
+		});
+	};
+
+	return AppRouter;
 });

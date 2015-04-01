@@ -1,11 +1,12 @@
 'use strict';
 
 define([
-    'backbone', 'react', 'jsx!router.react', 'react.backbone'
-], function (Backbone, React, Router) {
+    'react', 'jsx!router.react'
+], function (React, Router) {
 
     var initialize = function () {
-        new Router();
+        var router = new Router();
+	    router.init();
     };
 
     return {

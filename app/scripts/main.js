@@ -5,22 +5,22 @@ require.config({
         jquery: 'vendor/zepto.min',
 
         react: 'vendor/react-with-addons.min',
+        'react-router': 'vendor/ReactRouter.min',
         "JSXTransformer": 'vendor/JSXTransformer',
         jsx: 'vendor/jsx',
-        'react.backbone': 'vendor/react.backbone',
-
-        backbone: 'vendor/backbone',
-        underscore: 'vendor/lodash.min',
 
         text: 'vendor/text',
         json: 'vendor/json',
-        mdown: 'vendor/mdown',
-        markdownConverter: 'vendor/Markdown.Converter'
+        showdown: 'vendor/showdown'
     },
     shim: {
-        underscore: {
-            exports: '_'
-        },
+	    "react-router": {
+		    exports: "ReactRouter",
+		    deps: ['react'],
+		    init: function(React) {
+			    this.React = React;
+		    }
+	    },
 	    jquery: {
 		    exports: '$'
 	    }
@@ -28,7 +28,7 @@ require.config({
 });
 
 require([
-    'backbone', 'jsx!app.react'
-], function (Backbone, App) {
+    'jsx!app.react'
+], function (App) {
     App.initialize();
 });
