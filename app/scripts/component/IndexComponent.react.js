@@ -11,7 +11,7 @@ define([
 
 	var IndexComponent = React.createClass({
 		getInitialState: function () {
-			return {value: 'Type some *markdown* here!'};
+			return {value: 'JavaScript: <level4> \n <i class="star-icon icon-star star-1">'};
 		},
 		handleChange: function () {
 			this.setState({value: this.refs.textarea.getDOMNode().value});

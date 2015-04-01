@@ -81,3 +81,36 @@ textarea {
     height: 600px;
     border-radius: 2px;
 }
+
+.star-icon {
+    background: url(../images/star.png) no-repeat;
+    background-size: 410% 100%;
+    -webkit-background-size: 410% 100%;
+}
+
+.icon-star {
+
+    display: inline-block;
+    width: 96px;
+    height: 18px;
+}
+
+.star-1 {
+    background-position: -76px 0px;
+}
+
+.star-2 {
+    background-position: -57px 0px;
+}
+
+.star-3 {
+    background-position: -38px 0px;
+}
+
+.star-4 {
+    background-position: -19px 0px;
+}
+
+.star-5 {
+    background-position: 0px 0px;
+}

@@ -8,12 +8,13 @@
     var resume = function(converter) {
         return [
             { type: 'output', filter: function(source){
+                return source.replace(/(<level\d>)/gi, function(match, star) {
+                    var level = match.match(/<level(\d)>/i)[1];
 
-                return source.replace(/(<level>)/gi, function(match, star) {
                     if (star) {
-                        return '<span class="star">';
+                        return '<i class="star-icon icon-star star-' + level + '"></i>';
                     } else {
-                        return '<span class="star">';
+                        return '<i class="star-icon icon-star star-1"></i>';
                     }
                 });
             }}
