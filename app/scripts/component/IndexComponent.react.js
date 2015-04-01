@@ -2,8 +2,8 @@
 
 define([
     'react'
-],function(React, about){
-    var IndexComponent = React.createClass({
+], function (React) {
+	var IndexComponent = React.createClass({
         render : function() {
             return (<div>Hello, World</div>);
         }
