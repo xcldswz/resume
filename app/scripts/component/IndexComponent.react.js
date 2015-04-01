@@ -1,13 +1,37 @@
 'use strict';
 
 define([
-    'react'
-], function (React) {
-	var IndexComponent = React.createClass({
-        render : function() {
-            return (<div>Hello, World</div>);
-        }
-    });
+	'react',
+	'showdown'
+], function (React, Showdown) {
+	var converter = new Showdown.converter();
 
-    return IndexComponent;
+	var IndexComponent = React.createClass({
+		getInitialState: function () {
+			return {value: 'Type some *markdown* here!'};
+		},
+		handleChange: function () {
+			this.setState({value: this.refs.textarea.getDOMNode().value});
+		},
+		render: function () {
+			return (
+				<div className="MarkdownEditor">
+					<h3>Input</h3>
+					<textarea
+						onChange={this.handleChange}
+						ref="textarea"
+						defaultValue={this.state.value} />
+					<h3>Output</h3>
+					<div
+						className="content"
+						dangerouslySetInnerHTML={{
+							__html: converter.makeHtml(this.state.value)
+						}}
+					/>
+				</div>
+			);
+		}
+	});
+
+	return IndexComponent;
 });
