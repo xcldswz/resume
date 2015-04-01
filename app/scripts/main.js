@@ -11,9 +11,15 @@ require.config({
 
         text: 'vendor/text',
         json: 'vendor/json',
-        showdown: 'vendor/showdown'
+        showdown: 'vendor/Showdown',
+        table: 'vendor/extensions/table',
+        prettify: 'vendor/extensions/prettify',
+        resume: 'vendor/extensions/resume'
     },
     shim: {
+        table: ["showdown"],
+        prettify: ["showdown"],
+        resume: ["showdown"],
 	    "react-router": {
 		    exports: "ReactRouter",
 		    deps: ['react'],

@@ -2,9 +2,12 @@
 
 define([
 	'react',
-	'showdown'
+	'showdown',
+	'table',
+	'prettify',
+	'resume'
 ], function (React, Showdown) {
-	var converter = new Showdown.converter();
+	var converter = new Showdown.converter({ extensions: ['table', 'prettify', 'resume'] });
 
 	var IndexComponent = React.createClass({
 		getInitialState: function () {
