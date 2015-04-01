@@ -17,14 +17,16 @@ define([
 	var App = React.createClass({
 		render: function () {
 			return (
-				<div className="header">
-					<header>
-						<ul>
-							<li><Link to="app">Dashboard</Link></li>
-							<li><Link to="example">Example</Link></li>
-							<li><Link to="calendar">Calendar</Link></li>
-						</ul>
-					</header>
+				<div>
+					<div className="header">
+						<header>
+							<ul>
+								<li><Link to="app">Dashboard</Link></li>
+								<li><Link to="example">Example</Link></li>
+								<li><Link to="calendar">Calendar</Link></li>
+							</ul>
+						</header>
+					</div>
 					<RouteHandler/>
 				</div>
 			);
@@ -32,9 +34,9 @@ define([
 	});
 	var routes = (
 		<Route name="app" path="/" handler={App}>
-			<Route name="example" handler={IndexComponent}/>
+			<Route name="example" handler={ExampleComponent}/>
 			<Route name="calendar" handler={CalendarComponent}/>
-			<DefaultRoute handler={ExampleComponent} />
+			<DefaultRoute handler={IndexComponent} />
 		</Route>
 	);
 

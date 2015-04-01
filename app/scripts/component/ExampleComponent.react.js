@@ -11,7 +11,7 @@ define([
 		render: function () {
 			return (
 				<div className="pure-g">
-					<div className="pure-u-1 pure-u-md-1-1 resume" >
+					<div className="pure-u-3 pure-u-md-2-3 example" >
 						<div dangerouslySetInnerHTML={{ __html: converter.makeHtml(Resume) }}/>
 					</div>
 				</div>
