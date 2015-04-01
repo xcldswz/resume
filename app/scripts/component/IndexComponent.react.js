@@ -15,19 +15,23 @@ define([
 		},
 		render: function () {
 			return (
-				<div className="MarkdownEditor">
-					<h3>Input</h3>
-					<textarea
-						onChange={this.handleChange}
-						ref="textarea"
-						defaultValue={this.state.value} />
-					<h3>Output</h3>
-					<div
-						className="content"
-						dangerouslySetInnerHTML={{
-							__html: converter.makeHtml(this.state.value)
-						}}
-					/>
+				<div className="pure-g">
+					<div className="pure-u-1 pure-u-md-1-2">
+						<h3>Input</h3>
+						<textarea
+							onChange={this.handleChange}
+							ref="textarea"
+							defaultValue={this.state.value} />
+					</div>
+					<div className="pure-u-1 pure-u-md-1-2" >
+						<h3>Output</h3>
+						<div
+
+							dangerouslySetInnerHTML={{
+								__html: converter.makeHtml(this.state.value)
+							}}
+						/>
+					</div>
 				</div>
 			);
 		}

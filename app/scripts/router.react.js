@@ -17,7 +17,7 @@ define([
 	var App = React.createClass({
 		render: function () {
 			return (
-				<div>
+				<div className="header">
 					<header>
 						<ul>
 							<li><Link to="app">Dashboard</Link></li>
