@@ -1,6 +1,6 @@
 {
-  "name": "backbonereact",
-  "version": "0.0.0",
+  "name": "resume",
+  "version": "0.0.1",
   "dependencies": {},
   "devDependencies": {
     "apache-server-configs": "^2.8.0",
