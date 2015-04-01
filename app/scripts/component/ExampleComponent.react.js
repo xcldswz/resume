@@ -3,9 +3,12 @@
 define([
 	'react',
 	'text!../data/resume.md',
-	'showdown'
+	'showdown',
+	'table',
+	'prettify',
+	'resume'
 ], function (React, Resume, Showdown) {
-	var converter = new Showdown.converter();
+	var converter = new Showdown.converter({ extensions: ['table', 'prettify', 'resume'] });
 
 	var ExampleComponent = React.createClass({
 		render: function () {

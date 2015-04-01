@@ -3,32 +3,34 @@
 
 > [phodal.com](http://www.phodal.com)
 > [h@phodal.com](mailto:h@phodal.com)
-> (902) 817-3574
+> (86) 182-0921-9631
 
 ------
 
 ### Technical
 
+<level4>
+
 1. Java
-1. Android
 1. Javascript / NodeJS
+1. Android
 1. Python
-1. Git / SVN
-1. Cordova
-<!-- 1. Spring / Wicket -->
-1. Ruby
-<!-- 1. Weblogic / Websphere -->
-<!-- 1. Tomcat / Jetty -->
-<!-- 1. Oracle DB / MSSQL -->
-1. PostgreSQL / MySQL
+1. Git
 1. Backbone.js
+
+<level3>
+
+1. Cordova
+1. Ruby
+1. MySQL
+1. FAST / Solr
 
 ------
 
 ### Experience
 
 **ThoughtWorks** *Consultant* __2013 to present__
-	**Technical Environment** Backbone.js, Jasmine.js, Java, Spring, Cucumber, Ruby,1
+	**Technical Environment** Backbone.js, Jasmine.js, Java, Spring, Cucumber, Ruby,
 
 ------
 
@@ -41,11 +43,14 @@
 
 ###Mobile App
 
-* **教你设计物联网**
-    [https://play.google.com/store/apps/details?id=com.phodal.designiot](https://play.google.com/store/apps/details?id=com.phodal.designiot)
+| Name         | URL                   |
+|========      |=======================|
+|教你设计物联网  | [Google Play](https://play.google.com/store/apps/details?id=com.phodal.designiot)                   |
+|极客爱情       | [Google Play](https://play.google.com/store/apps/details?id=com.phodal.geekslove)                   |
+| 程序语言答人   | [Google Play](https://play.google.com/store/apps/details?id=com.ionicframework.learningionic860614) |
 
 ------
 
 ### Education
 
-**西安文理学院(电子信息工程)** __2010 to 2014__
+**西安文理学院(电子信息工程)** __2010 ~ 2014__

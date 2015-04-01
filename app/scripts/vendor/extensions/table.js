@@ -62,7 +62,7 @@
         if (line.trim().match(/^[|]{1}.*[|]{1}$/)) {
           line = line.trim();
           var tbl = [];
-          tbl.push('<table>');
+          tbl.push('<table class="pure-table pure-table-bordered">');
           hs = line.substring(1, line.length -1).split('|');
           tbl.push(tables.thead.apply(this, hs));
           line = lines[++i];
