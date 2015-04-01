@@ -5,8 +5,8 @@ define([
     'react',
 	'jsx!component/IndexComponent.react',
 	'jsx!component/CalendarComponent.react',
-	'jsx!component/InboxComponent.react'
-],function(Router, React, IndexComponent, CalendarComponent, InboxComponent){
+	'jsx!component/ExampleComponent.react'
+],function(Router, React, IndexComponent, CalendarComponent, ExampleComponent){
 	var AppRouter;
 
 	var DefaultRoute = Router.DefaultRoute;
@@ -21,7 +21,7 @@ define([
 					<header>
 						<ul>
 							<li><Link to="app">Dashboard</Link></li>
-							<li><Link to="inbox">Inbox</Link></li>
+							<li><Link to="example">Example</Link></li>
 							<li><Link to="calendar">Calendar</Link></li>
 						</ul>
 					</header>
@@ -32,9 +32,9 @@ define([
 	});
 	var routes = (
 		<Route name="app" path="/" handler={App}>
-			<Route name="inbox" handler={InboxComponent}/>
+			<Route name="example" handler={IndexComponent}/>
 			<Route name="calendar" handler={CalendarComponent}/>
-			<DefaultRoute handler={IndexComponent} />
+			<DefaultRoute handler={ExampleComponent} />
 		</Route>
 	);
 
