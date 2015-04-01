@@ -12,7 +12,6 @@ define([
 			return (
 				<div className="pure-g">
 					<div className="pure-u-1 pure-u-md-1-1 resume" >
-						<h3>Output</h3>
 						<div dangerouslySetInnerHTML={{ __html: converter.makeHtml(Resume) }}/>
 					</div>
 				</div>

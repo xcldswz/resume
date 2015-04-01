@@ -49,4 +49,3 @@
 ### Education
 
 **西安文理学院(电子信息工程)** __2010 to 2014__
-	Seneca College of Applied Arts and Technology (Seneca@York), Toronto, Ontario
