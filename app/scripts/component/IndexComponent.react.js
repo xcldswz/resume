@@ -21,16 +21,17 @@ define([
 						<textarea
 							onChange={this.handleChange}
 							ref="textarea"
-							defaultValue={this.state.value} />
+							defaultValue={this.state.value}/>
 					</div>
-					<div className="pure-u-1 pure-u-md-1-2" >
+					<div className="pure-u-1 pure-u-md-1-2 resume">
 						<h3>Output</h3>
+
 						<div
 
 							dangerouslySetInnerHTML={{
 								__html: converter.makeHtml(this.state.value)
 							}}
-						/>
+							/>
 					</div>
 				</div>
 			);
