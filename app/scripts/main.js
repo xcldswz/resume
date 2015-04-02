@@ -14,7 +14,7 @@ require.config({
         showdown: 'vendor/Showdown',
         table: 'vendor/extensions/table',
         prettify: 'vendor/extensions/prettify',
-        resume: 'vendor/extensions/resume'
+        star: 'vendor/extensions/star'
     },
     shim: {
         table: ["showdown"],

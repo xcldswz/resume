@@ -6,9 +6,9 @@ define([
 	'text!../data/example.md',
 	'table',
 	'prettify',
-	'resume'
+	'star'
 ], function (React, Showdown, example) {
-	var converter = new Showdown.converter({ extensions: ['table', 'prettify', 'resume'] });
+	var converter = new Showdown.converter({ extensions: ['table', 'prettify', 'star'] });
 
 	var IndexComponent = React.createClass({
 		getInitialState: function () {

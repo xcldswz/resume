@@ -6,9 +6,9 @@ define([
 	'showdown',
 	'table',
 	'prettify',
-	'resume'
+	'star'
 ], function (React, Resume, Showdown) {
-	var converter = new Showdown.converter({ extensions: ['table', 'prettify', 'resume'] });
+	var converter = new Showdown.converter({ extensions: ['table', 'prettify', 'star'] });
 
 	var ExampleComponent = React.createClass({
 		render: function () {

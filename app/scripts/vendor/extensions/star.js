@@ -5,14 +5,14 @@
 
 (function(){
 
-    var resume = function(converter) {
+    var star = function(converter) {
         return [
             { type: 'output', filter: function(source){
-                return source.replace(/(<level([0-9]*\.?[0-9]+)>)/gi, function(match, star) {
+                return source.replace(/(<level([0-9]*\.?[0-9]+)>)/gi, function(match, isLevel) {
                     var level = match.match(/<level([0-9]*\.?[0-9]+)>/i)[1];
                     level = level.replace(".", "-");
 
-                    if (star) {
+                    if (isLevel) {
                         return '<i class="star-icon icon-star star-' + level + '"></i>';
                     } else {
                         return '<i class="star-icon icon-star star-1"></i>';
@@ -23,8 +23,8 @@
     };
 
     // Client-side export
-    if (typeof window !== 'undefined' && window.Showdown && window.Showdown.extensions) { window.Showdown.extensions.resume = resume; }
+    if (typeof window !== 'undefined' && window.Showdown && window.Showdown.extensions) { window.Showdown.extensions.star = star; }
     // Server-side export
-    if (typeof module !== 'undefined') module.exports = resume;
+    if (typeof module !== 'undefined') module.exports = star;
 
 }());
