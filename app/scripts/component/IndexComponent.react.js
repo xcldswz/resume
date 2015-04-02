@@ -3,15 +3,16 @@
 define([
 	'react',
 	'showdown',
+	'text!../data/example.md',
 	'table',
 	'prettify',
 	'resume'
-], function (React, Showdown) {
+], function (React, Showdown, example) {
 	var converter = new Showdown.converter({ extensions: ['table', 'prettify', 'resume'] });
 
 	var IndexComponent = React.createClass({
 		getInitialState: function () {
-			return {value: 'JavaScript: <level4> \n <i class="star-icon icon-star star-1">'};
+			return {value: example};
 		},
 		handleChange: function () {
 			this.setState({value: this.refs.textarea.getDOMNode().value});
