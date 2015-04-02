@@ -89,7 +89,6 @@ textarea {
 }
 
 .icon-star {
-
     display: inline-block;
     width: 96px;
     height: 18px;
@@ -99,16 +98,33 @@ textarea {
     background-position: -76px 0px;
 }
 
+.star-1-5 {
+    background-position: -260px 0px;
+}
+
 .star-2 {
     background-position: -57px 0px;
 }
+
+.star-2-5 {
+    background-position: -241px 0px;
+}
+
 
 .star-3 {
     background-position: -38px 0px;
 }
 
+.star-3-5 {
+    background-position: -222px 0px;
+}
+
 .star-4 {
     background-position: -19px 0px;
+}
+
+.star-4-5 {
+    background-position: -203px 0px;
 }
 
 .star-5 {

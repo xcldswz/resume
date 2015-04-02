@@ -8,8 +8,9 @@
     var resume = function(converter) {
         return [
             { type: 'output', filter: function(source){
-                return source.replace(/(<level\d>)/gi, function(match, star) {
-                    var level = match.match(/<level(\d)>/i)[1];
+                return source.replace(/(<level([0-9]*\.?[0-9]+)>)/gi, function(match, star) {
+                    var level = match.match(/<level([0-9]*\.?[0-9]+)>/i)[1];
+                    level = level.replace(".", "-");
 
                     if (star) {
                         return '<i class="star-icon icon-star star-' + level + '"></i>';
