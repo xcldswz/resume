@@ -19,7 +19,7 @@ require.config({
     shim: {
         table: ["showdown"],
         prettify: ["showdown"],
-        resume: ["showdown"],
+        star: ["showdown"],
 	    "react-router": {
 		    exports: "ReactRouter",
 		    deps: ['react'],
