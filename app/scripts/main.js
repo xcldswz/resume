@@ -14,12 +14,14 @@ require.config({
         showdown: 'vendor/Showdown',
         table: 'vendor/extensions/table',
         prettify: 'vendor/extensions/prettify',
-        star: 'vendor/extensions/star'
+        star: 'vendor/extensions/star',
+        icons: 'vendor/extensions/icons'
     },
     shim: {
         table: ["showdown"],
         prettify: ["showdown"],
         star: ["showdown"],
+        icons: ["showdown"],
 	    "react-router": {
 		    exports: "ReactRouter",
 		    deps: ['react'],
