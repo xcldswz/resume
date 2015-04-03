@@ -55,6 +55,10 @@ p{
     font-size:12px;
 }
 
+.fa {
+    font-size: 18px;
+}
+
 textarea {
     font-size: 14px;
     padding: 0.5em;

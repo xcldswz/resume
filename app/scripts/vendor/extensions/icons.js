@@ -6,15 +6,15 @@
 (function(){
     var icons = function(converter) {
         return [
-            {
-              // strike-through
-              // NOTE: showdown already replaced "~" with "~T", so we need to adjust accordingly.
-              type    : 'lang',
-              regex   : '(~T){2}([^~]+)(~T){2}',
-              replace : function(match, prefix, content, suffix) {
-                  return '<del>' + content + '</del>';
-              }
-            }
+            { type: 'output', filter: function(source){
+                return source.replace(/<icon-(\w+)>/gi, function(match, isLevel) {
+                    var type = match.match(/<icon-(\w+)>/i)[1];
+
+                    if (isLevel) {
+                        return '<i class="fa fa-' + type + '"></i>';
+                    }
+                });
+            }}
         ];
     };
 
