@@ -1,9 +1,9 @@
 # Fengda Huang
 ##  Developer & Code Enthusiast
 
-> [phodal.com](http://www.phodal.com)
-> [h@phodal.com](mailto:h@phodal.com)
-> (86) 182-0921-9631
+<icon-home> [phodal.com](http://www.phodal.com) 
+<icon-mail-forward> [h@phodal.com](mailto:h@phodal.com)
+<icon-mobile-phone> (86) 182-0921-9631
 
 ------
 
@@ -34,10 +34,10 @@
 
 ------
 
-### Projects
-
+###<icon-github> Projects
+ 
 * **IoT**
-	<a href=https://github.com/phodal/iot class=not-printed>https://github.com/phodal/iot</a>
+	<a href=https://github.com/phodal/iot class=not-printed>https://github.com/phodal/iot</a>(<icon-github-alt>)
 
 ------
 

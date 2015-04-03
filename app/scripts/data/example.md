@@ -1,4 +1,6 @@
-<icon-github> [https://github.com/phodal](https://github.com/phodal)
+<icon-github> [https://github.com/phodal](https://github.com/phodal) 
+
+<icon-weibo> [http://weibo.com/phodal](http://weibo.com/phodal)
 
 | Name         | Level                   |
 |========      |=======================|
