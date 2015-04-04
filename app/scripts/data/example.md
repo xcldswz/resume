@@ -1,3 +1,5 @@
+OS: <icon-windows> <icon-apple> <icon-linux> <icon-android>
+
 <icon-github> [https://github.com/phodal](https://github.com/phodal) 
 
 <icon-weibo> [http://weibo.com/phodal](http://weibo.com/phodal)

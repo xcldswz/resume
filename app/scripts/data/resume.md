@@ -9,6 +9,8 @@
 
 ### Technical
 
+OS: <icon-windows> <icon-apple> <icon-linux> <icon-android>
+
 <level4>
 
 1. Java
