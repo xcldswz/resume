@@ -9,6 +9,8 @@ require.config({
         "JSXTransformer": 'vendor/JSXTransformer',
         jsx: 'vendor/jsx',
 
+        jsPDF: 'vendor/jspdf.min',
+
         text: 'vendor/text',
         json: 'vendor/json',
         showdown: 'vendor/Showdown',
