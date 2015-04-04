@@ -14,8 +14,6 @@
 
                     if (isLevel) {
                         return '<i class="star-icon icon-star star-' + level + '"></i>';
-                    } else {
-                        return '<i class="star-icon icon-star star-1"></i>';
                     }
                 });
             }}
