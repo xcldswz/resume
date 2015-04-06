@@ -134,3 +134,33 @@ textarea {
 .star-5 {
     background-position: 0 0px;
 }
+
+thead {
+    cursor: pointer;
+    background: #c9dff0;
+}
+
+thead tr th {
+    border-right: 1px solid #fff;
+    font-weight: bold;
+    padding: 12px 10px 12px 12px;
+}
+
+tbody tr {
+    color: #555;
+}
+
+tbody tr td {
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+    padding: 2px 10px;
+}
+
+table {
+    border: 1px solid #eee;
+}
+
+table p {
+    padding: 0;
+}
