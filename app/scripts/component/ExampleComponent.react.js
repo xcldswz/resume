@@ -7,39 +7,25 @@ define([
 	'jsPDF',
 	'jquery',
 	'jsx!component/SearchComponent.react',
+	'jsx!component/ExportPDFComponent.react',
 	'table',
 	'prettify',
 	'star',
 	'icons'
-], function (React, Resume, Showdown, jsPDF, $, SearchComponent) {
+], function (React, Resume, Showdown, jsPDF, $, SearchComponent, ExportPDFComponent) {
 	var converter, html, ExampleComponent;
 	converter = new Showdown.converter({extensions: ['table', 'prettify', 'star', 'icons']});
 	html = converter.makeHtml(Resume);
 
 	ExampleComponent = React.createClass({
-		onButtonClicked: function () {
-			var doc, elementHandler, source;
-			doc = new jsPDF();
-			elementHandler = {
-				'#main_content': function () {
-					return true;
-				}
-			};
-			source = $('#main_content').html();
-			doc.fromHTML(source, 15, 15,
-				{
-					'width': 180, 'elementHandlers': elementHandler
-				});
-			doc.save("resume.pdf");
-		},
 		render: function () {
+			var id = '#resume';
 			return (
 				<div className="pure-g">
 					<div className="pure-u-3 pure-u-md-2-3 example">
-						<input type="button" className="pure-button pure-button-primary" onClick={this.onButtonClicked}
-						       value="export as pdf"/>
+						<ExportPDFComponent id={id} />
 						<SearchComponent html={html} />
-						<div dangerouslySetInnerHTML={{ __html: html }}/>
+						<div id='resume' dangerouslySetInnerHTML={{ __html: html }}/>
 					</div>
 				</div>
 			);
