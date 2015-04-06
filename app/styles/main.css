@@ -164,3 +164,17 @@ table {
 table p {
     padding: 0;
 }
+
+input[type=text]{
+    text-align: center;
+    font: inherit;
+    border: 2px solid #a3d8d6;
+    padding: 6px 6px;
+    font-size: 14px;
+    box-shadow: 0 1px 1px #DDD;
+    width: 384px;
+    outline: none;
+    display: inline-block;
+    color: #7B8585;
+    margin: 0 auto 20px;
+}
