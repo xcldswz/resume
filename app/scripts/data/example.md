@@ -11,3 +11,10 @@ OS: <icon-windows> <icon-apple> <icon-linux> <icon-android>
 | Python   | <level4.5> |
 | Ruby       | <level2.5>|
 | SQL       | <level1.5>|
+
+<level3>
+
+1. Cordova
+1. Ruby
+1. MySQL
+1. FAST / Solr
