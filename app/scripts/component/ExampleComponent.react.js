@@ -4,15 +4,13 @@ define([
 	'react',
 	'text!../data/resume.md',
 	'showdown',
-	'jsPDF',
-	'jquery',
 	'jsx!component/SearchComponent.react',
 	'jsx!component/ExportPDFComponent.react',
 	'table',
 	'prettify',
 	'star',
 	'icons'
-], function (React, Resume, Showdown, jsPDF, $, SearchComponent, ExportPDFComponent) {
+], function (React, Resume, Showdown, SearchComponent, ExportPDFComponent) {
 	var converter, html, ExampleComponent;
 	converter = new Showdown.converter({extensions: ['table', 'prettify', 'star', 'icons']});
 	html = converter.makeHtml(Resume);
