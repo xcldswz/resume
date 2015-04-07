@@ -20,7 +20,9 @@ define([
 		render: function () {
 			return (
 				<span>
-					<input type="button" className="pure-button pure-button-primary" onClick={this.onButtonClicked} value="export as pdf"/>
+					<button className="pure-button pure-button-primary" onClick={this.onButtonClicked}>
+						<i className="fa fa-save"></i> Export PDF
+					</button>
 				</span>
 			);
 		}
