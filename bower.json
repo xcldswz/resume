@@ -19,6 +19,7 @@
     "pure": "~0.6.0",
     "showdown": "~0.4.0",
     "material-ui": "~0.7.2",
-    "font-awesome": "~4.3.0"
+    "font-awesome": "~4.3.0",
+    "elasticsearch": "~4.0.2"
   }
 }
