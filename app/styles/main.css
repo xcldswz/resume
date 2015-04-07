@@ -52,7 +52,6 @@ ul li.focused{
 
 p{
     padding-top:15px;
-    font-size:12px;
 }
 
 .fa {
@@ -177,4 +176,26 @@ input[type=text]{
     display: inline-block;
     color: #7B8585;
     margin: 0 auto 20px;
+}
+
+a {
+    color: #3b8bba;
+    text-decoration: none;
+}
+#resume a {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+}
+
+#resume a:after{
+    content: " \f08e";
+}
+
+a:visited {
+    color: #3b8bba;
 }
