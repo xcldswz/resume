@@ -4,6 +4,14 @@ define([
 	'react',
 	'jquery'
 ], function (React, $) {
+	function getListsName(ol_list) {
+		var libraries = [];
+		$.each(ol_list, function (index, list) {
+			libraries.push({name: $(list).text()});
+		});
+		return libraries;
+	}
+	
 	var SearchComponent = React.createClass({
 		getInitialState: function () {
 			return {searchString: ''};
@@ -14,10 +22,7 @@ define([
 		render: function () {
 			var libraries, searchString;
 
-			libraries = [];
-			$.each($(this.props.html).find('ol li'), function (index, list) {
-				libraries.push({name: $(list).text()});
-			});
+			libraries = getListsName($(this.props.html).find('ol li'));
 			searchString = this.state.searchString.trim().toLowerCase();
 
 			if (searchString.length > 0) {
@@ -27,7 +32,7 @@ define([
 			}
 
 			return (
-					<span>
+				<span>
 						Search:
 						<input type='text' value={this.state.searchString} onChange={this.handleChange}
 						       placeholder='Type here'/>
