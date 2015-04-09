@@ -17,6 +17,11 @@ define([
 
 	IndexComponent = React.createClass({
 		getInitialState: function () {
+			var save = localStorage.getItem("markdown-editor-storage");
+			if(save !== undefined && save !== null && save != '') {
+				console.log(save);
+				return {value: save};
+			}
 			return {value: example};
 		},
 		handleChange: function () {
@@ -26,7 +31,7 @@ define([
 			$('.input').hide();
 			$('.top').hide();
 			$('.header').hide();
-			localStorage.setItem("markdown-editor-storage", $('.input').text());
+			localStorage.setItem("markdown-editor-storage", this.refs.textarea.getDOMNode().value);
 		},
 		render: function () {
 			var html = converter.makeHtml(this.state.value);
