@@ -5,8 +5,9 @@ define([
     'react',
 	'jsx!component/IndexComponent.react',
 	'jsx!component/ExampleComponent.react',
+	'jsx!component/LanguageComponent.react',
 	'i18n!:translation'
-],function(Router, React, IndexComponent, ExampleComponent, i18n){
+],function(Router, React, IndexComponent, ExampleComponent, LanguageComponent, i18n){
 	var AppRouter;
 
 	var DefaultRoute = Router.DefaultRoute;
@@ -19,6 +20,7 @@ define([
 			return (
 				<div>
 					<div className="header">
+						<LanguageComponent />
 						<header>
 							<ul>
 								<li><Link to="app">{i18n.t('nav.home')}</Link></li>
