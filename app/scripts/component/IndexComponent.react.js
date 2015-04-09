@@ -24,13 +24,15 @@ define([
 			var html = converter.makeHtml(this.state.value);
 			return (
 				<div>
-					<div className="pure-u-1 pure-u-md-1-2">
+					<div className="pure-u-1 top">
 						<ExportPDFComponent id={'resume'} />
 						<SearchComponent html={html} />
+					</div>
+					<div className="pure-u-1 pure-u-md-1-2 input">
 						<h3>Input</h3>
 						<textarea onChange={this.handleChange} ref="textarea" defaultValue={this.state.value}/>
 					</div>
-					<div className="pure-u-1 pure-u-md-1-2">
+					<div className="pure-u-1 pure-u-md-1-2 output">
 						<h3>Output</h3>
 						<div className="resume" id="resume" dangerouslySetInnerHTML={{ __html:  html }} />
 					</div>
