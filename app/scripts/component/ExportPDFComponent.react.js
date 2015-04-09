@@ -3,8 +3,9 @@
 define([
 	'react',
 	'jquery',
-	'jsPDF'
-], function (React, $, jsPDF) {
+	'jsPDF',
+	'i18n!:translation'
+], function (React, $, jsPDF, i18n) {
 	var exportPDFComponent = React.createClass({
 		onButtonClicked: function () {
 			var doc, elementHandler, source;
@@ -21,7 +22,7 @@ define([
 			return (
 				<span>
 					<button className="pure-button pure-button-primary" onClick={this.onButtonClicked}>
-						<i className="fa fa-save"></i> Export PDF
+						<i className="fa fa-save"></i> {i18n.t('app.pdfExport')}
 					</button>
 				</span>
 			);

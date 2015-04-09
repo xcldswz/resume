@@ -47,10 +47,9 @@ require.config({
 		fallbackLng: "zh-CN",
 		detectLngQS: "locale",
 		supportedLngs: {
-			'../locales': {
-				zh: ['translation'],
-				'zh-cn': ['translation']
-			}
+			zh: ['translation'],
+			en: ['translation'],
+			'zh-cn': ['translation']
 		}
 	}
 });

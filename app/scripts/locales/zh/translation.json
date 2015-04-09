@@ -1,0 +1,10 @@
+{
+  "app": {
+    "preview": "打印预览",
+    "pdfExport": "导出为PDF"
+  },
+  "nav": {
+    "home": "首页",
+    "example": "示例"
+  }
+}

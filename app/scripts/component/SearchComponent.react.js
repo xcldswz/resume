@@ -2,7 +2,8 @@
 
 define([
 	'react',
-	'jquery'
+	'jquery',
+
 ], function (React, $) {
 	function getListsName(ol_list) {
 		var libraries = [];

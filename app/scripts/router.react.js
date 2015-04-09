@@ -4,8 +4,9 @@ define([
     'react-router',
     'react',
 	'jsx!component/IndexComponent.react',
-	'jsx!component/ExampleComponent.react'
-],function(Router, React, IndexComponent, ExampleComponent){
+	'jsx!component/ExampleComponent.react',
+	'i18n!:translation'
+],function(Router, React, IndexComponent, ExampleComponent, i18n){
 	var AppRouter;
 
 	var DefaultRoute = Router.DefaultRoute;
@@ -20,8 +21,8 @@ define([
 					<div className="header">
 						<header>
 							<ul>
-								<li><Link to="app" data-i18n="nav.home">Home</Link></li>
-								<li><Link to="example">Example</Link></li>
+								<li><Link to="app">{i18n.t('nav.home')}</Link></li>
+								<li><Link to="example">{i18n.t('nav.example')}</Link></li>
 							</ul>
 						</header>
 					</div>

@@ -1,9 +1,0 @@
-{
-  "app": {
-    "name": "i18next"
-  },
-  "nav": {
-    "home": "Home",
-    "example": "example"
-  }
-}

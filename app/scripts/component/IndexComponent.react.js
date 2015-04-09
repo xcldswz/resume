@@ -15,7 +15,6 @@ define([
 ], function (React, Showdown, $, example, SearchComponent, ExportPDFComponent, i18n) {
 	var IndexComponent;
 	var converter = new Showdown.converter({ extensions: ['table', 'prettify', 'star', 'icons'] });
-	console.log(i18n.t("app.name"));
 
 	IndexComponent = React.createClass({
 		getInitialState: function () {
@@ -23,7 +22,12 @@ define([
 			if(save !== undefined && save !== null && save != '') {
 				return {value: save};
 			}
-			return {value: example};
+			return {
+				value: example
+			};
+		},
+		componentDidMount: function() {
+			this.setState({i18n: i18n});
 		},
 		handleChange: function () {
 			this.setState({value: this.refs.textarea.getDOMNode().value});
@@ -38,11 +42,11 @@ define([
 		render: function () {
 			var html = converter.makeHtml(this.state.value);
 			return (
-				<div>
+				<div ref="nav">
 					<div className="pure-u-1 top">
 						<ExportPDFComponent id={'resume'}/> &nbsp;
 						<button className="pure-button pure-button-primary" onClick={this.hiddenOthers}>
-							<i className="fa fa-print"></i> 打印预览
+							<i className="fa fa-print"></i> {i18n.t('app.preview')}
 						</button>
 						<SearchComponent html={html}/>
 					</div>
