@@ -7,13 +7,15 @@ define([
 	'text!../data/example.md',
 	'jsx!component/SearchComponent.react',
 	'jsx!component/ExportPDFComponent.react',
+	'i18n!:translation',
 	'table',
 	'prettify',
 	'star',
 	'icons'
-], function (React, Showdown, $, example, SearchComponent, ExportPDFComponent) {
+], function (React, Showdown, $, example, SearchComponent, ExportPDFComponent, i18n) {
 	var IndexComponent;
 	var converter = new Showdown.converter({ extensions: ['table', 'prettify', 'star', 'icons'] });
+	console.log(i18n.t("app.name"));
 
 	IndexComponent = React.createClass({
 		getInitialState: function () {
@@ -50,7 +52,6 @@ define([
 					</div>
 					<div className="pure-u-1 pure-u-md-1-2 output">
 						<h3>Output</h3>
-
 						<div className="resume" id="resume" dangerouslySetInnerHTML={{ __html:  html }}/>
 					</div>
 				</div>
