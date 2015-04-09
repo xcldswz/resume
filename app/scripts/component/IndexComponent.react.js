@@ -26,6 +26,7 @@ define([
 			$('.input').hide();
 			$('.top').hide();
 			$('.header').hide();
+			localStorage.setItem("markdown-editor-storage", $('.input').text());
 		},
 		render: function () {
 			var html = converter.makeHtml(this.state.value);
