@@ -31,6 +31,7 @@ define([
 			$('.input').hide();
 			$('.top').hide();
 			$('.header').hide();
+			$('.output h3').hide();
 			localStorage.setItem("markdown-editor-storage", this.refs.textarea.getDOMNode().value);
 		},
 		render: function () {
@@ -38,11 +39,10 @@ define([
 			return (
 				<div>
 					<div className="pure-u-1 top">
+						<ExportPDFComponent id={'resume'}/> &nbsp;
 						<button className="pure-button pure-button-primary" onClick={this.hiddenOthers}>
 							<i className="fa fa-arrow-left"></i> Only Output
 						</button>
-						<span></span>
-						<ExportPDFComponent id={'resume'}/>
 						<SearchComponent html={html}/>
 					</div>
 					<div className="pure-u-1 pure-u-md-1-2 input">
