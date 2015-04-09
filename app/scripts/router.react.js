@@ -20,7 +20,7 @@ define([
 					<div className="header">
 						<header>
 							<ul>
-								<li><Link to="app">Dashboard</Link></li>
+								<li><Link to="app">Home</Link></li>
 								<li><Link to="example">Example</Link></li>
 							</ul>
 						</header>

@@ -41,7 +41,7 @@ define([
 					<div className="pure-u-1 top">
 						<ExportPDFComponent id={'resume'}/> &nbsp;
 						<button className="pure-button pure-button-primary" onClick={this.hiddenOthers}>
-							<i className="fa fa-arrow-left"></i> Only Output
+							<i className="fa fa-print"></i> 打印预览
 						</button>
 						<SearchComponent html={html}/>
 					</div>
