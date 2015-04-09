@@ -10,7 +10,7 @@ define([
 			var doc, elementHandler, source;
 			doc = new jsPDF();
 			elementHandler = {};
-			source = $(this.props.id).html();
+			source = $('#' + this.props.id).html();
 			doc.fromHTML(source, 15, 15,
 				{
 					'width': 180, 'elementHandlers': elementHandler

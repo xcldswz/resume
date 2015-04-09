@@ -17,7 +17,7 @@ define([
 
 	ExampleComponent = React.createClass({
 		render: function () {
-			var id = '#resume';
+			var id = 'resume';
 			return (
 				<div className="pure-g">
 					<div className="pure-u-3 pure-u-md-2-3 example">

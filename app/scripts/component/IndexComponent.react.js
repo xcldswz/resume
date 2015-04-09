@@ -19,7 +19,6 @@ define([
 		getInitialState: function () {
 			var save = localStorage.getItem("markdown-editor-storage");
 			if(save !== undefined && save !== null && save != '') {
-				console.log(save);
 				return {value: save};
 			}
 			return {value: example};
