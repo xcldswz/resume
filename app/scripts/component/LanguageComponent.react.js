@@ -16,7 +16,8 @@ define([
 			return (
 				<div className="language" role="group">
 					<button type="button" className="pure-button pure-button-primary" onClick={this.switchEn.bind(null, this)}>English</button>
-					<button type="button" className="pure-button pure-button-primary" onClick={this.switchCn.bind(null, this)}>中文</button>
+					&nbsp;
+					<button type="button" className="pure-button button-secondary" onClick={this.switchCn.bind(null, this)}>中文</button>
 				</div>
 			)
 		}
