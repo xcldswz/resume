@@ -4,6 +4,13 @@ OS: <icon-windows> <icon-apple> <icon-linux> <icon-android>
 
 <icon-weibo> [http://weibo.com/phodal](http://weibo.com/phodal)
 
+<timeline> 2012.2-2013.3
+
+<timeline> 2013.3-2013.6
+
+<timeline> 2013.7-2013.8
+
+
 | Name         | Level                   |
 |========      |=======================|
 | Java  | <level3.5>   |
