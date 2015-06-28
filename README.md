@@ -2,6 +2,10 @@
 
 > A Online Resume Generator in Pure Client-Side JavaScript.
 
+screenshot: 
+
+![markdown](markdown.jpg)
+
 ##Libs
 
 - React
