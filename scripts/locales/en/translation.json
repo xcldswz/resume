@@ -1,0 +1,10 @@
+{
+  "app": {
+    "preview": "Print Preview",
+    "pdfExport": "PDF Export"
+  },
+  "nav": {
+    "home": "Homepage",
+    "example": "Examples"
+  }
+}
